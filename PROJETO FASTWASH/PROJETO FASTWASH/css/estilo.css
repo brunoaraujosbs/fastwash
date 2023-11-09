@@ -1,0 +1,408 @@
+/*Limpar formatações padrão*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 1em;
+	font-family: 'Noto Sans', sans-serif;
+	background: hsl(0, 0%, 87%);
+	overflow-x: hidden;
+}
+
+/*lAYOUT SLIDER*/
+section.slide {
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	padding-top: 1px;
+	overflow: hidden;
+}
+.slide-home{
+	width: 400%;
+	height: auto;
+	display: flex;
+}
+.slide-home input{
+	display: none;
+}
+.slide-box {
+	width: 25%;
+	height: auto;
+	text-align: center;
+}
+.slide-box img{
+	width: 100%;
+}
+.nav-manual, .nav-auto {
+	position: absolute;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-top: 50%;
+}
+.nav-manual .manual-botao, .nav-auto div {
+	border: 3px solid #002f7d;
+	padding: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.nav-manual .manual-botao:not(:last-child), .nav-auto div:not(:last-child) {
+	margin-right: 10px;
+}
+.nav-manual .manual-botao:hover {
+	background-color: #002f7d;
+	transition: 0.3s;
+}
+#radio1:checked ~ .nav-auto .auto-botao1, #radio2:checked ~ .nav-auto .auto-botao2{
+	background-color: #002f7d;
+}
+#radio1:checked ~ .primeiro{
+	margin-left: 0%;
+}
+#radio2:checked ~ .primeiro{
+	margin-left: -25%;
+}
+
+/**** Layout header *****/
+#area-superior {
+	background: -webkit-linear-gradient(left, #454545, #272727);
+	background: -moz-linear-gradient(left, #454545, #272727);
+	background: -ms-linear-gradient(left, #454545, #272727);
+	background: -o-linear-gradient(left, #454545, #272727);
+	background: linear-gradient(to right, #454545, #272727);
+	height: 3em;
+	width: 100%;
+}
+#area-superior p {
+	color: #edf8ff;
+}
+#email-superior a{
+	padding-left: 10px;
+	padding-top: 10px;
+	float: left;
+	text-decoration: none;
+	width: 15%;
+	font-size: small;
+}
+#tel-superior a{
+	padding-left: 10px;
+	padding-top: 10px;
+	text-decoration: none;
+	float: left;
+	width: 15%;
+	font-size: small;
+}
+#area-cabecalho {
+	background: -webkit-linear-gradient(left, #027acc, #002f7d);
+	background: -moz-linear-gradient(left, #027acc, #002f7d);
+	background: -ms-linear-gradient(left, #027acc, #002f7d);
+	background: -o-linear-gradient(left, #027acc, #002f7d);
+	background: linear-gradient(to right, #027acc, #002f7d);
+	padding: 15px;
+	text-align: center;
+	height: 80px;
+	width: 97,5%;
+	position: -webkit-sticky; /* Necessário para funcionar no Safari */
+    position: sticky;
+    top: 0;
+
+}
+#area-menu a:hover {
+	color: #000000;
+	background: #edf8ff;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: 0.7s;
+}
+#area-menu {
+	padding: 30px;
+	float: right;
+}
+#area-menu a {
+color: #edf8ff;
+padding: 8px ;
+text-decoration: none;
+}
+#area-logo h1{
+	padding: 10px;
+	float: left;
+	font-style: italic;
+	text-decoration: underline;
+	font-size: 3em;
+	color: #272727;
+
+}
+.branco{
+	color: white;
+}
+
+/*PRA VER DEPOIS 
+#area-cabecalho a {
+	
+}
+#area-cabecalho a:link, a:visited{
+	
+	
+}
+*/
+
+/*****FIM Layout header *****/
+
+ /*AREA PRINCIPAL*/
+.area-principal {
+  width: 100%;
+  padding-top: 15px;
+  margin: 0 auto;
+  text-align: center;
+  background: -webkit-linear-gradient(left, #454545, #272727);
+  background: -moz-linear-gradient(left, #454545, #272727);
+  background: -ms-linear-gradient(left, #454545, #272727);
+  background: -o-linear-gradient(left, #454545, #272727);
+  background: linear-gradient(to right, #454545, #272727);
+  height: 330px;
+  margin-bottom: 20px; /* Adicione margem inferior para criar espaço entre esta seção e o rodapé */
+}
+
+
+.area-conteudo{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+.area-conteudo h2{
+	color: #edf8ff;
+	text-align: center;
+	margin-bottom: 15px;
+	padding-top: 1px;
+	border-radius: 5px;
+	height: 30px;
+}
+.area-conteudo p {
+	color: #edf8ff;
+	text-align: center;
+}
+.area-conteudo img {
+	width: 95%;
+}
+.conteudo1, .conteudo2, .conteudo{
+	width: 32%;
+	float: left;
+}
+.conteudo1, .conteudo2, .conteudo:hover{
+	cursor: pointer;
+}
+/*
+.data-postagem {
+	font-size: 0.8em;
+	border-bottom: 1px solid #f4f4f4;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	display: block;
+}
+*/
+ /*FIM AREA PRINCIPAL*/
+
+/*area lateral*/
+#area-lateral {
+	width: 40%;
+	float: left;
+}
+
+.conteudo-lateral {
+
+	background: -webkit-linear-gradient(left, #027acc, #002f7d);
+	background: -moz-linear-gradient(left, #027acc, #002f7d);
+	background: -ms-linear-gradient(left, #027acc, #002f7d);
+	background: -o-linear-gradient(left, #027acc, #002f7d);
+	background: linear-gradient(to right, #027acc, #002f7d);
+	padding: 20px;
+	height: auto;
+	border-radius: 5px;
+
+}
+.conteudo-lateral a {
+	text-decoration: none;	
+	padding: 15px;
+	margin-bottom: 20px;
+	
+}
+.conteudo-lateral a:link, a:visited{
+	color: #edf8ff;
+	
+}
+.conteudo-lateral a:hover {
+	text-decoration: wavy;
+	border-radius: 10px;
+	background-color: #edf8ff;
+	color: #272727;
+	padding: 3px;
+	margin: 5px;
+	transition: 0.7s;
+}
+.conteudo-lateral h3 {
+	color: #002f7d;
+	background: #edf8ff;
+	margin-bottom: 15px;
+	padding-top: 1px;
+	border-radius: 5px;
+	height: 30px;
+	text-align: center;
+	
+}
+/*FIM area lateral*/
+#rodape {
+	clear: both;
+	background: -webkit-linear-gradient(left, #027acc, #002f7d);
+	background: -moz-linear-gradient(left, #027acc, #002f7d);
+	background: -ms-linear-gradient(left, #027acc, #002f7d);
+	background: -o-linear-gradient(left, #027acc, #002f7d);
+	background: linear-gradient(to right, #027acc, #002f7d);
+	padding: 15px;
+	text-align: center;
+	height: auto;
+	width: 100%;
+	
+}
+
+/* Formatações em geral 
+h1 {
+	color: #4e4e4e;
+	font-size: 2.5em;
+}
+*/
+
+
+
+/* AREA DO CADASTRO*/
+.form_c{
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+
+
+}
+.form_c fieldset{
+	background: -webkit-linear-gradient(left, #027acc, #002f7d);
+	background: -moz-linear-gradient(left, #027acc, #002f7d);
+	background: -ms-linear-gradient(left, #027acc, #002f7d);
+	background: -o-linear-gradient(left, #027acc, #002f7d);
+	background: linear-gradient(to right, #027acc, #002f7d);
+	border-radius: 5px;
+}
+
+.data_form{
+	padding: 15px;
+}
+#sendcadastro{
+	margin: 5px;
+	padding-left: 10px;
+	height: 30px;
+	text-decoration: aliceblue;
+}
+#sendcadastro input{
+	height: 30px;
+	width: 50%;
+	border-radius: 5px;
+	background: -webkit-linear-gradient(left, #454545, #272727);
+	background: -moz-linear-gradient(left, #454545, #272727);
+	background: -ms-linear-gradient(left, #454545, #272727);
+	background: -o-linear-gradient(left, #454545, #272727);
+	background: linear-gradient(to right, #454545, #272727);
+	
+}
+
+/*AREA SOBRE*/
+.area-sobre{
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+.form-container {
+  display:grid;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 1vh; /* Isso define a altura do contêiner para cobrir a altura da viewport */
+}
+
+
+.form_c {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+	overflow: hidden;
+}
+
+.form_c form {
+  max-width: 400px; /* Define a largura máxima do formulário */
+  margin: 0 auto; /* Centraliza horizontalmente o formulário */
+}
+
+
+formulario-cadastro {
+  max-width: 400px; /* Define a largura máxima do formulário */
+  background-color: white; /* Define a cor de fundo do formulário, se necessário */
+  padding: 20px; /* Adicione preenchimento interno ao formulário, se necessário */
+}
+
+
+.footer-contato {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #002f7d; /* Defina a cor de fundo desejada */
+  color: white; /* Defina a cor do texto, se necessário */
+  padding: 10px; /* Adicione preenchimento interno ao rodapé, se necessário */
+  text-align: center; /* Centralize o texto no rodapé */
+  clear: both;
+}
+
+/*AREA ADM*/
+.area-adm {
+	width: 100%;
+	padding: 10px;
+	align-items: center;
+	text-align: center;
+	
+}
+.ladod{
+	width: 60%;
+	float: right;
+}
+.ladoe{
+	float: left;
+	width: 35%;
+	
+}
+
+/*buscador ADM*//*buscador ADM*//*buscador ADM*//*buscador ADM*/
+.buscador{
+	padding: 10px;
+}
+.buscador label {display: block;}
+.buscador button {padding: 10px;
+	background: -webkit-linear-gradient(left, #027acc, #002f7d);
+	background: -moz-linear-gradient(left, #027acc, #002f7d);
+	background: -ms-linear-gradient(left, #027acc, #002f7d);
+	background: -o-linear-gradient(left, #027acc, #002f7d);
+	background: linear-gradient(to right, #027acc, #002f7d);
+	border-radius: 5px;
+	
+}
+.buscador input {width: 50%;
+	padding: 10px;
+	background-color:  #edf8ff;
+	border-radius: 5px;
+	
+}

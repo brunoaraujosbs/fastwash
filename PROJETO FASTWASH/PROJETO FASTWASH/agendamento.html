@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FASTWASH - AGENDAMENTO</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id="area-superior">
+		<span id="email-superior"><a href="">fastwash2015@bol.com</a></span>
+		<span id="tel-superior"><a href="">(51)98163-8056</a></span>
+	</div>
+	<div id="area-cabecalho">
+		<div id="area-logo">
+			<h1>FAST<span class="branco">WASH</span></h1>
+		</div>
+		<div id="area-menu">
+			<a href="index.html">Início</a>
+			<a href="cadastro.html">Cadastre-se</a>
+			<a href="agendamento.html">Agendamento</a>
+			<a href="sobre.html">A franquia</a>
+			<a href="contato.html">Contato</a>
+			<a href="administrativo.html">Administrativo</a>
+		</div>
+	</div>
+
+	<div class="form_c">
+		<form>
+			<fieldset>
+				<div class="conteudo-lateral">
+					<h3>Agende aqui</h3>
+				</div>
+				<div class="data_form">
+					<label for="select"><b>Selecione o tipo de serviço</b></label>
+					<select name="select">
+						<option value="valor1">Lavagem premium</option>
+						<option value="valor2" selected>Lavagem Gold</option>
+						<option value="valor3">Lavagem platinum</option>
+					  </select>
+				</div> 
+				<div class="data_form">
+				<label for="email"><b>Email :</b></label>
+				<input type="text">
+				</div>
+				<div class="data_form">
+					<label for=""><b>Seu usuário</b></label>
+					<input type="text">
+				</div>
+				<div class="data_form">
+					<label for="url"><b>Dia:</b></label>
+					<input type="date" name="url" id="url">
+				</div>
+				<div class="data_form">
+					<label for="type"><b>Periodo do dia</b></label><br>
+					<label for="Type">Manhã</label>
+					<input type="checkbox" name="type" id="type">
+					<label for="Type">Tarde</label>
+					<input type="checkbox" name="type" id="type">
+				</div>
+				<div class="data_form">
+					<label for="type"><b>Qual seu Veículo?</b></label><br>
+					<label for="Type">Carro</label>
+					<input type="checkbox" name="type" id="type">
+					<label for="Type">Moto</label>
+					<input type="checkbox" name="type" id="type">
+					<label for="Type">Caminhão</label>
+					<input type="checkbox" name="type" id="type">
+				</div>
+			
+				<div id="sendcadastro">
+					<input type="button" value="agendar">					
+				</div>
+		</form>
+	</div>
+	
+	<footer id="rodape">
+		Todos os direitos reservados
+	</footer>
+</body>
+</html>
